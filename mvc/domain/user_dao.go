@@ -20,7 +20,7 @@ func GetUser(userId int64) (*User, *utils.AppErr)  {
 	if user == nil {
 		return nil, &utils.AppErr{
 			Message:    "user not found",
-			StatusCode: 0,
+			StatusCode: 404,
 			ErrCode:    "not_found",
 		}
 	}
